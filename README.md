@@ -93,9 +93,3 @@ Le script :
 ## 👨‍💻 Auteur
 
 Projet réalisé par [**Oladé Laourou**](https://github.com/votre-utilisateur) — n'hésitez pas à contribuer ou poser vos questions via issues ou pull requests !
-
----
-
-## 📄 Licence
-
-Ce projet est sous licence MIT – voir le fichier [LICENSE](LICENSE) pour plus d’informations.
