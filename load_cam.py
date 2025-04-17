@@ -5,21 +5,17 @@ import numpy as np
 import mediapipe as mp
 from tensorflow.keras.models import load_model
 
-# Charger le modèle
 model = load_model("sign_language_model.h5")
 
-# Labels
 labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
           'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-# Initialiser MediaPipe Hands
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(static_image_mode=False,
                        max_num_hands=1,
                        min_detection_confidence=0.7)
 mp_draw = mp.solutions.drawing_utils
 
-# Webcam
 cap = cv2.VideoCapture(0)
 
 while True:
